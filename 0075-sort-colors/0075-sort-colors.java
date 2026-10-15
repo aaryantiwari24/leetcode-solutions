@@ -6,14 +6,10 @@ class Solution {
             else if(arr[i]==1) o++;
             else if(arr[i]==2) t++;
        }
-       for(int i=0;i<z;i++){
-        arr[i]=0;
-       }
-       for(int i=z;i<o+z;i++){
-        arr[i]=1;
-       }
-       for(int i=o+z;i<arr.length;i++){
-        arr[i]=2;
+       for(int i=0;i<arr.length;i++){
+        if(i<z)arr[i]=0;
+        else if(i<o+z)arr[i]=1;
+        else arr[i]=2;
        }
     }
 }
