@@ -6,7 +6,6 @@ class Solution {
             if(arr[mid]==target)return mid;
             if(target<=arr[mid]){
                 hi=mid-1;
-           
             }
             else lo=mid+1;
         }
