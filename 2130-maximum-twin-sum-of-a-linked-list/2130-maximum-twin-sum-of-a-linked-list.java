@@ -30,7 +30,7 @@ class Solution {
         int max=0;
         while(p!=null){
             sum=temp.val+p.val;
-            if(max<=sum) max=sum;
+            if(max<sum) max=sum;
             temp=temp.next;
             p=p.next;
         }
